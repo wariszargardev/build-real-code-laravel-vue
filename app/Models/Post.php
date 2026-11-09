@@ -15,6 +15,9 @@ class Post extends Model
 
     protected $fillable = ['user_id', 'title', 'body'];
 
+    // $with default property: always eager load the author
+    // protected $with = ['author'];
+
     /**
      * @return BelongsTo<User, $this>
      */
